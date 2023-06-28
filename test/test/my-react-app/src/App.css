@@ -1,0 +1,26 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2, 2, 69);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background: wheat;
+    margin: 20px;
+}
