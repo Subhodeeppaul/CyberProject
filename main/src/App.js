@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen';
+import FirstPage from './FirstPage';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ const App = () => {
 
   return (
     <div className="app">
-      {loading ? <LoadingScreen /> : <h1>Main Page</h1>}
+      {loading ? <LoadingScreen /> : <FirstPage />}
       {/* Render your main content here */}
     </div>
   );
