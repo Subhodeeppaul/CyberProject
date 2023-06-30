@@ -5,31 +5,20 @@
 }*/
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(smokeee.jpg);
-    background-image: url(smoke.jpg);
-    animation: ani 3s linear infinite;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
+    background: linear-gradient(to right, black, rgb(35, 35, 137), rgb(240, 6, 220), rgb(215, 215, 10));
+    background-size: 400% 400%;
+    animation: gradient 10s infinite ease-in-out;
 }
 
-body {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    animation: animate 16s ease-in-out infinite;
-}
-
-@keyframes animate {
+@keyframes gradient {
     0% {
-        background-image: url(smokeee.jpg);
+        background-position: 0% 50%;
     }
-    25% {
-        background-image: url(smoke.jpg);
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
