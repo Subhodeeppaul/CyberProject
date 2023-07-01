@@ -6,20 +6,16 @@ function FirstPage() {
         alert("function called");
     }
 
-    return ( < >
-        <
-        div class = "container" >
-        <
-        a href = "#" >
-        <
-        span > Admin < /span> <
-        /a> <
-        a href = "#" >
-        <
-        span > User < /span> <
-        /a> <
-        /div> <
-        />
+    return ( <>
+        <div class = "container" >
+        <a href = "#" >
+        <span > Admin </span> 
+        </a> 
+        <a href = "#" >
+        <span > User </span> 
+        </a> 
+        </div> 
+        </>
     );
 }
 
