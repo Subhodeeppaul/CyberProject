@@ -10,18 +10,20 @@ function App() {
 
     return ( < >
         <
+        video autoplay loop muted src = "stars.mp4" > < /video>
+
+        <
         div class = "container" >
         <
         a href = "#" >
         <
-        span > Admin < /span>  <
-        /a>  <
+        span > Tickets Booking < /span>  < /
+        a > <
         a href = "#" >
         <
-        span > User < /span>  <
-        /a>  <
-        /div>  <
-        />
+        span > Parking Spot < /span>  < /
+        a > <
+        /div>  < / >
     );
 }
 
