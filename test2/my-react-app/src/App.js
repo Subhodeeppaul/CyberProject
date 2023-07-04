@@ -8,20 +8,13 @@ function App() {
     }
 
 
-    return ( < >
-        <
-        div class = "container" >
+    return ( <>
+        <div class = "container" >
         <
         a href = "#" >
-        <
-        span > Admin < /span>  <
-        /a>  <
-        a href = "#" >
-        <
-        span > User < /span>  <
-        /a>  <
-        /div>  <
-        />
+        <span > Admin </span>  </a>  <a href = "#" >
+        <span > User </span>  </a>  </div>  
+        </>
     );
 }
 
