@@ -8,6 +8,7 @@ function App() {
     }
 
 
+<<<<<<< HEAD
     return ( < >
         <
         video autoplay loop muted src = "stars.mp4" > < /video>
@@ -24,6 +25,15 @@ function App() {
         span > Parking Spot < /span>  < /
         a > <
         /div>  < / >
+=======
+    return ( <>
+        <div class = "container" >
+        <
+        a href = "#" >
+        <span > Admin </span>  </a>  <a href = "#" >
+        <span > User </span>  </a>  </div>  
+        </>
+>>>>>>> b4729d03277c5083b83bf9e1e4ce103ced3dc614
     );
 }
 
