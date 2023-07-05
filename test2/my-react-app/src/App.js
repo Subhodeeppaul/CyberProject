@@ -27,12 +27,12 @@ function App() {
         <
         a href = "#" >
         <
-        span > Admin < /span>  <
-        /a>  <
+        span > Tickets Booking < /span>  < /
+        a > <
         a href = "#" >
         <
-        span > User < /span>  <
-        /a> 
+        span > Parking Spot < /span>  < /
+        a >
 
         <
         /
