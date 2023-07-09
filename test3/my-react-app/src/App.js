@@ -10,8 +10,8 @@ function App() {
         h > List of States / Cities < /h> <
         ul >
         <
-        li > < span > < /span>West Bengal</li >
-        <
+        li > < span > < /span>Kolkata <
+        /li > <
         li > < span > < /span>Delhi</li >
         <
         li > < span > < /span>Maharastra</li >
