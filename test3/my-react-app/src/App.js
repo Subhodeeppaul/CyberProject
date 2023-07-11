@@ -41,6 +41,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            <audio src={process.env.PUBLIC_URL + '/bg.mp3'} autoPlay />
         </>
     );
 }
