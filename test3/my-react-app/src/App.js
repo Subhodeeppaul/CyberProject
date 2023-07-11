@@ -30,8 +30,7 @@ function App() {
         <div className = "box" >
         <h1 > List of States / Cities </h1> <ul >
         <li > <span > </span><a href>Kolkata</a > </li > 
-        <li > < span > </span><a href>Delhi</a > </li > 
-        <li > < span > </span><a href>Maharashtra</a > </li > <
+        <li > < span > </span><a href>Delhi</a > </li > <li > < span > </span><a href>Maharashtra</a > </li > <
         li > < span > </span><a href>Tamil Nadu</a > </li > <
         li > < span > </span><a href>Karnataka</a > </li > <
         li > < span > </span><a href>Madhya Pradesh</a > </li > <
