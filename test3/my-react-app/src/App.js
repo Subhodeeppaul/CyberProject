@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 
-import bgAudio from './bg.mp3'; // Assuming the file is in the src directory
+import bgAudio from './bg.mp3'; 
 
 function App() {
     const videoStyles = {
@@ -16,6 +16,7 @@ function App() {
 
     useEffect(() => {
         const audio = new Audio(bgAudio);
+        audio.loop = true; 
         audio.play();
     }, []);
 
