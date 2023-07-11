@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
+
+import bgAudio from './bg.mp3'; // Assuming the file is in the src directory
 
 function App() {
     const videoStyles = {
@@ -11,6 +13,11 @@ function App() {
         objectFit: 'cover',
         zIndex: -1,
     };
+
+    useEffect(() => {
+        const audio = new Audio(bgAudio);
+        audio.play();
+    }, []);
 
     return (
         <>
@@ -41,7 +48,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            <audio src={process.env.PUBLIC_URL + '/bg.mp3'} autoPlay />
         </>
     );
 }
