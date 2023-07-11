@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 
-import bgAudio from './bg.mp3'; 
+import bgAudio from './bg.mp3';
 
 function App() {
     const videoStyles = {
@@ -16,40 +16,48 @@ function App() {
 
     useEffect(() => {
         const audio = new Audio(bgAudio);
-        audio.loop = true; 
+        audio.loop = true;
         audio.play();
     }, []);
 
-    return (
-        <>
-            <div className="content">
-                <video autoPlay muted loop style={videoStyles}>
-                    <source src={process.env.PUBLIC_URL + '/bg2.mp4'} type="video/mp4" />
-                </video>
-                <div className="container">
-                    <div className="box">
-                        <h1>List of States / Cities</h1>
-                        <ul>
-                            <li><span></span>Kolkata</li>
-                            <li><span></span>Delhi</li>
-                            <li><span></span>Maharashtra</li>
-                            <li><span></span>Tamil Nadu</li>
-                            <li><span></span>Karnataka</li>
-                            <li><span></span>Madhya Pradesh</li>
-                            <li><span></span>Andhra Pradesh</li>
-                            <li><span></span>Uttar Pradesh</li>
-                            <li><span></span>Jammu and Kashmir</li>
-                            <li><span></span>Uttarakhand</li>
-                            <li><span></span>Rajasthan</li>
-                            <li><span></span>Meghalaya</li>
-                            <li><span></span>Manipur</li>
-                            <li><span></span>Jharkhand</li>
-                            <li><span></span>Tripura</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </>
+    return ( <
+        >
+        <
+        div className = "content" >
+        <
+        video autoPlay muted loop style = { videoStyles } >
+        <
+        source src = { process.env.PUBLIC_URL + '/bg2.mp4' }
+        type = "video/mp4" / >
+        <
+        /video> <
+        div className = "container" >
+        <
+        div className = "box" >
+        <
+        h1 > List of States / Cities < /h1> <
+        ul >
+        <
+        li > < span > < /span><a href>Kolkata</a > < /li > <
+        li > < span > < /span><a href>Delhi</a > < /li > <
+        li > < span > < /span><a href>Maharashtra</a > < /li > <
+        li > < span > < /span><a href>Tamil Nadu</a > < /li > <
+        li > < span > < /span><a href>Karnataka</a > < /li > <
+        li > < span > < /span><a href>Madhya Pradesh</a > < /li > <
+        li > < span > < /span>< a href>Andhra Pradesh</a > < /li > <
+        li > < span > < /span><a href>Uttar Pradesh</a > < /li > <
+        li > < span > < /span><a href>Jammu and Kashmir</a > < /li > <
+        li > < span > < /span><a href>Uttarakhand</a > < /li > <
+        li > < span > < /span><a href>Rajasthan</a > < /li > <
+        li > < span > < /span><a href>Meghalaya</a > < /li > <
+        li > < span > < /span><a href>Manipur</a > < /li > <
+        li > < span > < /span><a href>Jharkhand</a > < /li > <
+        li > < span > < /span><a href>Tripura</a > < /li > <
+        /ul> < /
+        div > <
+        /div> < /
+        div > <
+        />
     );
 }
 

@@ -17,24 +17,25 @@ body {
 
 .box {
     width: 300px;
-    border-bottom: 20px solid #03a9f4;
+    /*border-bottom: 20px solid #03a9f4;*/
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .box h {
-    color: rgb(249, 249, 249);
-    background: rgb(66, 66, 195);
+    /*color: rgb(249, 249, 249);*/
+    /* opacity: 0.5;*/
+    /* background: rgb(66, 66, 195);*/
     padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 1000;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .box ul {
     position: relative;
-    background: rgb(201, 201, 212);
+    /*background: rgb(201, 201, 212);*/
     padding: 20px;
 }
 
@@ -42,9 +43,13 @@ body {
     list-style: none;
     padding: 10px;
     width: 100%;
-    background: #fff;
+    /*background: #fff;*/
     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
     transition: transform 0.5s;
+    /*opacity: 0.6;*/
+    color: rgb(249, 252, 252);
+    font-size: medium;
+    font-weight: bolder;
 }
 
 
@@ -57,7 +62,7 @@ body {
     z-index: 100;
     background: #25bcff;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 2);
-    color: #fff;
+    /* color: #fff;*/
     opacity: 1;
 }
 
