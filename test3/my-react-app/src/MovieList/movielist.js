@@ -1,7 +1,17 @@
 import React, { useEffect } from 'react';
 import './movielist.css';
 
-function MovieList() {
+import bgVideo from './images/bg2.mp4';
+import backImage from './images/back.png';
+import imageA from './images/a.jpg';
+import imageB from './images/b.jpg';
+import imageC from './images/c.webp';
+import imageD from './images/d.webp';
+import imageE from './images/e.jpg';
+import imageF from './images/f.webp';
+import nextImage from './images/next.png';
+
+function App() {
   useEffect(() => {
     const scrollContainer = document.querySelector(".gallery");
     const backBtn = document.getElementById("backBtn");
@@ -37,7 +47,7 @@ function MovieList() {
   return (
     <>
       <video autoPlay muted loop id="backgroundVideo">
-        <source src="images/bg2.mp4" type="video/mp4" />
+        <source src={bgVideo} type="video/mp4" />
       </video>
       <br />
       <center>
@@ -46,36 +56,36 @@ function MovieList() {
         </h1>
       </center>
       <div className="gallery-wrap">
-        <img src="images/back.png" id="backBtn" />
+        <img src={backImage} id="backBtn" alt="Back" />
 
         <div className="gallery">
           <div>
             <span>
-              <img src="images/a.jpg" height="300px" width="50px" />
+              <img src={imageA} height="300px" width="50px" alt="Image A" />
             </span>
             <span>
-              <img src="images/b.jpg" height="300px" width="50px" />
+              <img src={imageB} height="300px" width="50px" alt="Image B" />
             </span>
             <span>
-              <img src="images/c.webp" height="300px" width="50px" />
+              <img src={imageC} height="300px" width="50px" alt="Image C" />
             </span>
           </div>
           <div>
             <span>
-              <img src="images/d.webp" height="300px" width="50px" />
+              <img src={imageD} height="300px" width="50px" alt="Image D" />
             </span>
             <span>
-              <img src="images/e.jpg" height="300px" width="50px" />
+              <img src={imageE} height="300px" width="50px" alt="Image E" />
             </span>
             <span>
-              <img src="images/f.webp" height="300px" width="20px" />
+              <img src={imageF} height="300px" width="20px" alt="Image F" />
             </span>
           </div>
         </div>
-        <img src="images/next.png" id="nextBtn" />
+        <img src={nextImage} id="nextBtn" alt="Next" />
       </div>
     </>
   );
 }
 
-export default MovieList;
+export default App;
