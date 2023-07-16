@@ -33,6 +33,10 @@ body {
     border-top-right-radius: 10px;
 }
 
+.box h1{
+    color:#fff;
+}
+
 .box ul {
     position: relative;
     /*background: rgb(201, 201, 212);*/
