@@ -1,4 +1,5 @@
-const notes = [{
+const notes = [
+    {
         _id: "1",
         title: "Day 1 of college",
         content: "I made a few new friends and introduced myself to a lot of new teachers.",
