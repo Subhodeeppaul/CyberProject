@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './App.css';
+//import './App.css';
 
 import bgVideo from './images/bg2.mp4';
 import backImage from './images/back.png';
