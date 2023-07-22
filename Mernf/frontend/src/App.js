@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import LandingPage from "./screens/LandingPage/LandingPage";
-import {BrowserRouter,Route } from 'react-router-dom';
+import {BrowserRouter,Routes } from 'react-router-dom';
 import MyNotes from "./screens/LandingPage/MyNotes/MyNotes";
 
 const App = () => ( 
@@ -11,8 +11,8 @@ const App = () => (
    <Header/>
     
     <main>
-        <Route path='/' component={LandingPage} exact/>
-        <Route path='/mynotes' component={()=><MyNotes/>}/>
+        <Routes path='/' component={LandingPage} exact/>
+        <Routes path='/mynotes' component={()=><MyNotes/>}/>
     
     </main> 
    <Footer/>
