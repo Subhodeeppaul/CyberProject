@@ -1,14 +1,25 @@
 import { Button,Card,Badge, Accordion } from "react-bootstrap";
 import MainScreen from "../../../components/MainScreen";
 import {Link} from "react-router-dom";
-import notes,{} from '../../daata/notes';
+
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
 const MyNotes = () => {
+  const [notes, setNotes]=useState([]);
   const deleteHandler =(id)=>{
     if(window.confirm("Are you Sure?")){
 
     }
   };
+  const fetchNotes= async() =>{
+    const { daata }= await axios.get('/api/notes')
+    setNotes(daata);
+  };
+  console.log(notes);
+  useEffect(()=>{
+    fetchNotes();
+  },[]);
   return (
     <MainScreen title='Welcome back'>MyNotes
     <Link to='createnote'>
@@ -18,7 +29,7 @@ const MyNotes = () => {
       </Link>
       {
         notes.map(note =>(
-          <Accordion>
+          <Accordion key={note._id}>
               <Card style={{margin:10}}>
                  <Card.Header style={{display:"flex"}}>
                   <span style={{color:"black",
