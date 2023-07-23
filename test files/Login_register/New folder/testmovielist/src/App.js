@@ -3,13 +3,13 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import home from './home.js';
-import ImageAPage from './ImageAPage';
-import ImageBPage from './ImageBPage';
-import ImageCPage from './ImageCPage';
-import ImageDPage from './ImageDPage';
-import ImageEPage from './ImageEPage';
-import ImageFPage from './ImageFPage';
-import ImageGPage from './ImageGPage';
+import ImageAPage from './ImgMovie/ImageAPage';
+import ImageBPage from './ImgMovie/ImageBPage';
+import ImageCPage from './ImgMovie/ImageCPage';
+import ImageDPage from './ImgMovie/ImageDPage';
+import ImageEPage from './ImgMovie/ImageEPage';
+import ImageFPage from './ImgMovie/ImageFPage';
+import ImageGPage from './ImgMovie/ImageGPage';
 
 function App() {
   useEffect(() => {
