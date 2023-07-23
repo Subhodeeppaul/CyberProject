@@ -40,7 +40,7 @@ body {
 .gallery div img{
   width: 100%;
   filter: grayscale(100%);
-  transition: transform o.5s;
+  transition: transform o.10s;
 }
 
 .gallery::-webkit-scrollbar{

@@ -1,17 +1,32 @@
-import './ImageAPage.css';
+import React from 'react';
 import imageA from './video/ImageA.mp4';
+import './ImageAPage.css'
 
 function ImageAPage() {
+  const bodyStyle = {
+    margin: 0,
+    padding: 0,
+    backgroundColor: 'black',
+  };
+
+  const containerStyle = {
+    width: '100%',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
   return (
-    <div>
-      {/* Your content for Image A page */}
-      <h2>Image A Page</h2>
-      <video autoPlay controls>
-        {/* Use the 'imageA' variable as the source for the video */}
-        <source src={imageA} type="video/mp4" />
-        {/* Add more <source> tags for other video formats (e.g., WebM, Ogg) if needed */}
-      </video>
-      <button className="book-button">Book This Movie</button>
+    <div style={bodyStyle}>
+      <div style={containerStyle}>
+        <h2 style={{ color: 'white' }}>Byomkesh O Durgo Rahasya</h2>
+        <video autoPlay controls width="1100" height="650">
+          <source src={imageA} type="video/mp4" />
+        </video>
+        <button className="book-button">Book This Movie</button>
+      </div>
     </div>
   );
 }
