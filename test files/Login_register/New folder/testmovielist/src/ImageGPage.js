@@ -1,8 +1,8 @@
 import React from 'react';
-import imageF from './video/ImageF.mp4';
+import imageG from './video/ImageG.mp4';
 import './ImageAPage.css'
 
-function ImageFPage() {
+function ImageGPage() {
   const bodyStyle = {
     margin: 0,
     padding: 0,
@@ -21,9 +21,9 @@ function ImageFPage() {
   return (
     <div style={bodyStyle}>
       <div style={containerStyle}>
-        <h2 style={{ color: 'white' }}>LEO - Bloody Sweet</h2>
+        <h2 style={{ color: 'white' }}>Chini 2</h2>
         <video autoPlay controls width="1100" height="650">
-          <source src={imageF} type="video/mp4" />
+          <source src={imageG} type="video/mp4" />
         </video>
         <button className="book-button">Book This Movie</button>
       </div>
@@ -31,4 +31,4 @@ function ImageFPage() {
   );
 }
 
-export default ImageFPage;
+export default ImageGPage;
