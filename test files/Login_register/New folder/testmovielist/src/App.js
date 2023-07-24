@@ -1,8 +1,8 @@
-// App.js
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import home from './home.js';
+import MovieStateCity from './MovieStateCity';
 import ImageAPage from './ImgMovie/ImageAPage';
 import ImageBPage from './ImgMovie/ImageBPage';
 import ImageCPage from './ImgMovie/ImageCPage';
@@ -51,9 +51,9 @@ function App() {
   return (
     <Router>
       <>
-       
         <Switch>
-        <Route exact path="/" component={home} />
+          <Route exact path="/" component={MovieStateCity} />
+          <Route exact path="/home" component={home} />
           <Route exact path="/ImageAPage" component={ImageAPage} />
           <Route exact path="/ImageBPage" component={ImageBPage} />
           <Route exact path="/ImageCPage" component={ImageCPage} />
