@@ -24,4 +24,4 @@ const MainScreen = ({title,children}) => {
   );
 };
 
-export default MainScreen
+export default MainScreen;

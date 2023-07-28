@@ -1,27 +1,24 @@
 import { Spinner } from "react-bootstrap";
 
-
-const Loading = ({size=100}) => {
+const Loading = ({ size = 100 }) => {
   return (
     <div
-    style={{
-        display:"flex",
-        justifyContent:"center",
-        alignItems:"center",
-        width:"100%",
-        height:"100%",
-        
-    }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100%",
+      }}
     >
-        <Spinner
+      <Spinner
         style={{
-            width:size,
-            height:size,
-
+          width: size,
+          height: size,
         }}
         animation="border"
-        />
-        </div>
+      />
+    </div>
   );
 };
 

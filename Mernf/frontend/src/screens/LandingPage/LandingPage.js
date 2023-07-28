@@ -18,7 +18,7 @@ const LandingPage = () => {
               <div className="intro-text">
                 <div>
                   <h1 className='title'>Welcome</h1>
-                  <p className='subtitle'>Safe place for notes</p>
+                  <p className='subtitle'>To the world of movies</p>
                 </div>
                 <div className='buttonContainer'>
                   <a href='/login'>

@@ -9,8 +9,7 @@ import axios from "axios";
 const RegisterScreen = () => {
 const [email,setEmail]=useState("");
 const [name,setName]=useState("");
-const [pic,setPic]=useState("
-");
+const [pic,setPic]=useState("");
 const [password,setPassword]=useState("");
 const [confirmpassword,setConfirmPassword]=useState("");
 const [message,setMessage]=useState(null);
@@ -58,7 +57,7 @@ const postDetails=(pics)=>{
     data.append('file',pics)
     data.append('upload_preset','notezipper')
     data.append('cloud_name','codder')
-    fetch(,{
+    fetch({
       method:'post',
       body:'data',
     }).then((res)=>res.json()).then((data)=>{
