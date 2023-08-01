@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import home from './home.js';
 import MovieStateCity from './MovieStateCity';
+import Start from './start';
+import FirstPage from './FirstPage';
 import ImageAPage from './ImgMovie/ImageAPage';
 import ImageBPage from './ImgMovie/ImageBPage';
 import ImageCPage from './ImgMovie/ImageCPage';
@@ -52,7 +54,9 @@ function App() {
     <Router>
       <>
         <Switch>
-          <Route exact path="/" component={MovieStateCity} />
+        <Route exact path="/" component={Start} />
+        <Route exact path="/FirstPage" component={FirstPage} />
+          <Route exact path="/MovieStateCity" component={MovieStateCity} />
           <Route exact path="/home" component={home} />
           <Route exact path="/ImageAPage" component={ImageAPage} />
           <Route exact path="/ImageBPage" component={ImageBPage} />

@@ -80,7 +80,7 @@ function MovieStateCity() {
           {data.map((item) => (
             <li key={item.id} style={listItemStyles}>
               <span></span>
-              {/* Link to the "home" page when the city is clicked */}
+              
               <Link to="/home" style={linkStyles} onMouseOver={handleLinkHover}>
                 {item.city}
               </Link>
@@ -89,7 +89,6 @@ function MovieStateCity() {
         </ul>
       </div>
       <Switch>
-        {/* Render the home component when the "home" page is accessed */}
         <Route exact path="/home" component={home} />
       </Switch>
     </div>

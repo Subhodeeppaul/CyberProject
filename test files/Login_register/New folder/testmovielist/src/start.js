@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen';
 import FirstPage from './FirstPage';
 
-const App = () => {
+const Start = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => {    
     setTimeout(() => {
       setLoading(false);
-    }, 3000); 
+    }, 3000);
   }, []);
 
   return (
@@ -19,4 +19,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Start;
