@@ -15,7 +15,7 @@ const LoginFst = () => (
         <Route path='/' component={LandingPage} exact/> 
         <Route path='/login' component={LoginScreen} exact/> 
         <Route path='/register' component={RegisterScreen} exact/> 
-        <Route path='/mynotes' component={()=><MyNotes/>}/> 
+        <Route path='/mynotes' component={MyNotes} exact/> 
     </main> 
    <Footer/>
  </BrowserRouter>

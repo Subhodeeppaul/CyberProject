@@ -5,10 +5,11 @@ const app = express();
 const connectDB = require("./config/db"); // Make sure the path to the db.js file is correct
 const userRoutes = require('./routes/userRoutes');
 const { notFound, errorHandler } = require("./middlewares/errorMiddlewares");
+const cors = require('cors');
 dotenv.config();
 connectDB();
 app.use(express.json());
-
+app.use(cors());
 //Remove these test routes as they are not needed for this scenario
  app.get('/', (req, res) => {
      res.send("Api runing");

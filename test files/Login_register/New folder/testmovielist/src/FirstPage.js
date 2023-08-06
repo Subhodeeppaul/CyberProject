@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import './FirstPage.css';
 import MovieStateCity from './MovieStateCity';
+import LandingPage from './screens/LandingPage/LandingPage';
 
 function FirstPage() {
   function apple() {
@@ -12,16 +13,16 @@ function FirstPage() {
     <>
       <div className="container">
         
-        <Link to="/MovieStateCity">
+        <Link to="/LandingPage">
           <span>Admin</span>
         </Link>
         
-        <Link to="/MovieStateCity">
+        <Link to="/LandingPage">
           <span>User</span>
         </Link>
       </div>
       <Switch>
-        <Route exact path="/MovieStateCity" component={MovieStateCity} />
+        <Route exact path="/LandingPage" component={LandingPage} />
       </Switch>
     </>
   );

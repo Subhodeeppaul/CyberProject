@@ -4,6 +4,9 @@ import './App.css';
 import home from './home.js';
 import MovieStateCity from './MovieStateCity';
 import Start from './start';
+import LandingPage from './screens/LandingPage/LandingPage';
+import LoginScreen from './screens/LandingPage/LoginScreen/LoginScreen';
+import RegisterScreen from "./screens/LandingPage/RegisterScreen/RegisterScreen";
 import FirstPage from './FirstPage';
 import ImageAPage from './ImgMovie/ImageAPage';
 import ImageBPage from './ImgMovie/ImageBPage';
@@ -56,6 +59,10 @@ function App() {
         <Switch>
         <Route exact path="/" component={Start} />
         <Route exact path="/FirstPage" component={FirstPage} />
+        <Route exact path="/LandingPage" component={LandingPage} />
+        <Route path='/login' component={LoginScreen} exact/>
+        <Route path='/register' component={RegisterScreen} exact/> 
+        
           <Route exact path="/MovieStateCity" component={MovieStateCity} />
           <Route exact path="/home" component={home} />
           <Route exact path="/ImageAPage" component={ImageAPage} />

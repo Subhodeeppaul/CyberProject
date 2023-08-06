@@ -1,0 +1,124 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ffccf9, #f5e1ff, #ffccf9, #f5e1ff);
+    background-size: 800% 800%;
+    animation: backgroundAnimation 20s ease infinite, colorChange 10s alternate infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%, 0% 50%, 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%, 200% 50%, 300% 50%;
+    }
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    animation: shadowAnimation 3s alternate infinite;
+    animation-name: welcomeAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes welcomeAnimation {
+    0%, 100% {
+        transform: scale(1);
+        color: #fff;
+    }
+    50% {
+        transform: scale(1.05);
+        color: #ff6600;
+    }
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 40px;
+    animation: bounceAnimation 1s ease infinite;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.landingbutton {
+    background-color: #ff6600;
+    color: white;
+    border: 3px solid #ff6600;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: pulseAnimation 2s infinite, buttonAnimation 3s alternate infinite;
+}
+
+.landingbutton.outline {
+    background-color: #ff6600;
+    color: white;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes buttonAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.landingbutton:hover {
+    background-color: #e55e00;
+    animation: buttonHoverAnimation 0.5s ease infinite;
+}
+
+@keyframes buttonHoverAnimation {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        background-color: #ff6600;
+        color: white;
+    }
+    50% {
+        transform: translateY(-8px) scale(1.05);
+        background-color: #e55e00;
+        color: white;
+    }
+}
