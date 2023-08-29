@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -11,12 +11,12 @@ const LandingPage = () => {
           <p className="subtitle">To the world of movies</p>
         </div>
         <div className="buttonContainer">
-          <Link to="/login">
+          <a href="/login" target="_blank" rel="noopener noreferrer">
             <button className="landingbutton">Login</button>
-          </Link>
-          <Link to="/register">
+          </a>
+          <a href="/register" target="_blank" rel="noopener noreferrer">
             <button className="landingbutton outline">Sign up</button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

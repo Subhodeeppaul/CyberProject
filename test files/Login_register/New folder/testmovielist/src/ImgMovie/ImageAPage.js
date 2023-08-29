@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'; 
 import imageA from './video/ImageA.mp4';
-import './ImageAPage.css'
+import './ImageAPage.css';
 
 function ImageAPage() {
+  const history = useHistory(); 
+
   const bodyStyle = {
     margin: 0,
     padding: 0,
@@ -18,14 +21,21 @@ function ImageAPage() {
     alignItems: 'center',
   };
 
+  const handleBookButtonClick = () => {
+    
+    history.push('/SeatBooking3D'); 
+  };
+
   return (
     <div style={bodyStyle}>
       <div style={containerStyle}>
-        <h2 style={{ color: 'white' }}>Byomkesh O Durgo Rahasya</h2>
+        <h2 style={{ color: 'white' }}>BYOMKESH O DURGO RAHASYA</h2>
         <video autoPlay controls width="1100" height="650">
           <source src={imageA} type="video/mp4" />
         </video>
-        <button className="book-button">Book This Movie</button>
+        <button className="book-button" onClick={handleBookButtonClick}>
+          Book This Movie
+        </button>
       </div>
     </div>
   );

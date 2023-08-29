@@ -1,8 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'; 
 import imageG from './video/ImageG.mp4';
-import './ImageAPage.css'
+import './ImageAPage.css';
 
 function ImageGPage() {
+  const history = useHistory(); 
   const bodyStyle = {
     margin: 0,
     padding: 0,
@@ -18,6 +20,11 @@ function ImageGPage() {
     alignItems: 'center',
   };
 
+  const handleBookButtonClick = () => {
+    
+    history.push('/booking'); 
+  };
+
   return (
     <div style={bodyStyle}>
       <div style={containerStyle}>
@@ -25,7 +32,9 @@ function ImageGPage() {
         <video autoPlay controls width="1100" height="650">
           <source src={imageG} type="video/mp4" />
         </video>
-        <button className="book-button">Book This Movie</button>
+        <button className="book-button" onClick={handleBookButtonClick}>
+          Book This Movie
+        </button>
       </div>
     </div>
   );

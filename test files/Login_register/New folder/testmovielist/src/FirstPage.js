@@ -1,25 +1,19 @@
 import React from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './FirstPage.css';
-import MovieStateCity from './MovieStateCity';
+
 import LandingPage from './screens/LandingPage/LandingPage';
 
 function FirstPage() {
-  function apple() {
-    alert('function called');
-  }
-
   return (
     <>
       <div className="container">
-        
-        <Link to="/LandingPage">
+        <a href="/LandingPage" target="_blank" rel="noopener noreferrer">
           <span>Admin</span>
-        </Link>
-        
-        <Link to="/LandingPage">
+        </a>
+        <a href="/LandingPage" target="_blank" rel="noopener noreferrer">
           <span>User</span>
-        </Link>
+        </a>
       </div>
       <Switch>
         <Route exact path="/LandingPage" component={LandingPage} />

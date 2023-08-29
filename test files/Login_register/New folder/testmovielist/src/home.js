@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import { BrowserRouter as Router,Link, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Link} from 'react-router-dom';
 import bgVideo from './images/bg2.mp4';
 import backImage from './images/back.png';
 import imageA from './images/a.jpg';
@@ -14,6 +14,7 @@ import nextImage from './images/next.png';
 
 const home = () => {
   return (
+    <Router>
     <div> <video autoPlay muted loop id="backgroundVideo">
     <source src={bgVideo} type="video/mp4" />
   </video>
@@ -71,8 +72,8 @@ const home = () => {
     </div>
     <img src={nextImage} id="nextBtn" alt="Next" />
   </div>
-</div>
+</div></Router>
   )
 }
 
-export default home
+export default home;

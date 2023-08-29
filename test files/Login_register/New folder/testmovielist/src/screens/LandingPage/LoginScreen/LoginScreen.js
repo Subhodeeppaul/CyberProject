@@ -34,7 +34,7 @@ const LoginScreen = ({ history }) => {
       );
       console.log(data);
       setLoading(false);
-      navigate.push("/MovieStateCity");
+      navigate.push("/hall");
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
       setError(error.response.data.message);
